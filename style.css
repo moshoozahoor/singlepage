@@ -1,0 +1,36 @@
+body{
+  /* background-color: 1d3557; */
+}
+
+h2{
+  color: #457b9d!important;
+}
+
+.custom-btn{
+  background-color: #457b9d!important;
+  color: #fff;
+}
+
+header{
+  background-color: #1d3557;
+
+}
+header a{
+  color: #fff;
+}
+/* slider */
+.customslider{
+  height: 400px;
+  overflow: hidden;
+}
+
+/* services */
+.services .row .card{
+  background-color: #1d3557;
+  color: #fff;
+}
+
+
+footer{
+  background-color: #1d3557;
+}
