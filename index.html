@@ -24,20 +24,22 @@
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item active text-white">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item text-white">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
 
             <li class="nav-item text-white">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
 
             <li class="nav-item text-white">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
+
+            
 
           </ul>
         </div>
@@ -45,7 +47,7 @@
     </div>
   </header>
 
-  <section>
+  <section id="home">
     <div>
       <div id="carouselExampleControls" class="carousel slide customslider" data-ride="carousel">
         <div class="carousel-inner">
@@ -70,7 +72,7 @@
   </section>
 
 <!-- services -->
-  <section class="services p-3 mt-5">
+  <section class="services p-3 mt-5" id="services">
 
     <div class="container">
       <h2>Services</h2>
@@ -127,7 +129,7 @@
 
 
 <!-- about us -->
-<section class="bg-light p-3 mt-5">
+<section class="bg-light p-3 mt-5" id="about">
   <div class="container">
     <h2>About us</h2>
     <p>
@@ -141,8 +143,8 @@
 </section>
 
 <!-- contact us -->
-  <section class="p-3 mt-5">
-    <div class="container">
+  <section class="p-3 mt-5" id="contact"> 
+    <div class="container" >
       <h2>Contact us</h2>
       <form>
 
@@ -166,6 +168,10 @@
 
         <button type="submit" class="btn custom-btn">Submit</button>
       </form>
+      <div class="">
+        <h2>Find us on Map</h2>
+        <div class="mapouter col-12"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=pakistan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">google map website widget</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+      </div>
     </div>
 
   </section>
