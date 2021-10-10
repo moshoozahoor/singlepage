@@ -1,0 +1,40 @@
+<DOCTYPE html>
+	<html>
+	<title>MY CV</title>
+</head>
+<body>
+	<img src="pic.webp" border="5" width="80px" >
+	<b> NITASHA SADDIQA</b> 
+<hr>
+<p><b>ABOUT ME:</b></p> 
+<p>i am an optimistic opportunist to broden the arena through calculated logical methods in mathematics and a self motivated person aiming to educate and learn by means of requisite knowledge, having all the capabilities to endure any kind of responsibilty under all circumstances.Thak You! </p> 
+<hr>
+<table border="3" cellpadding="17" height="50" width="1050">
+	<tr>
+		<td colspan="3"><b>EDUCATION</b></td> 
+</tr> 
+<tr> 
+	<td rowspan="2" width="200"><img src="cap2.jpg"></td> 
+	<td><b>BS MATHS</b></td> 
+	<td><b>2020</b></td> 
+</tr> 
+<tr>
+	<td><b>Fsc Pre.Engineering</b></td>
+	<td><b>2016</b></td>
+	</tr> 
+</table> 
+<hr>
+	<b>Skills:</b> 
+<ul>
+<li> Problem solving nature</li> 
+<li>Communication</li> 
+<li>Self managment</li> 
+<li>Teamwork</li> 
+<li>Dedication</li> 
+<li>Leadership qualities</li> 
+</ul> 
+<hr>
+<p>This is my first practice of basic HTML!
+	</p>
+</body> 
+</html>
