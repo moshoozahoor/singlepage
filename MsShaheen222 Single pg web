@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY WEBSITE INDEX PAGE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../Desktop/web Design/css/bootstrap.min.css" rel="stylesheet">
+<script src="../../Desktop/web Design/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<link href="https://fonts.google.com/share?selection.family=STIX%20Two%20Text:ital,wght@0,700;1,500;1,700" rel="stylesheet">
+<link href="https://icons8.com/icon/4PLJFiJTdFTW/menu">
+</head>
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+body{
+	font-family: 'STIX Two Text', serif;
+	
+	}	
+
+.navbar
+{
+	display:flex;
+	align-item:center;
+	padding:20px;
+	}
+.nav
+{
+	flex:1;
+	text-align:right;
+	}
+nav ul
+{
+	display:inline-block;
+	list-style-type:none;
+	}
+nav ul li
+{
+	display:inline-block;
+	margin-right:20px;
+	}
+a{
+	text-decoration:none;
+	color:#555;
+	}
+p{
+	color:#555;
+	}				
+.container
+{
+	max-width:1300px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+	}
+.row
+{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	}
+.col-2
+{
+	flex-basis:50%;
+	min-width:300px;
+	}
+col-2 img
+{
+	max-width:100%;
+	padding:50px 0;
+
+	}	
+.col-2 h1
+{
+	font-size:50px;
+	line-height:60px;
+	margin:25px 0;
+	}
+.btn	
+{
+	display:inline-block;
+	background:#ff523b;
+	color:#fff;
+	padding: 8px 30px;
+	margin:30px 0;
+	border-radius:30px;
+	transition:background 0.5s;
+	}
+.btn:hover
+{
+	background: #563434;
+	
+	}	
+.header
+{
+	background:radial-gradient(#fff,#ffd6d6);
+	}
+.header .row
+{
+	margin-top: 70px;
+	}
+.categories
+{
+	margin:70px 0;
+	}
+.col-3
+{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+	}	
+.col-3 img
+{
+	width:100%;
+	height:200px;
+	}
+.small-container
+{
+	max-width: 1080px;
+	margine: auto;
+	padding-left: 300px;
+	padding-right: 25px;
+	}
+.col-4
+{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition:transform 0.5s;
+	}
+.col-4 img
+{
+	width: 100%;
+	/*height:200px;*/
+	}
+.title
+{
+	text-align:center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	}
+.title::after
+{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	}
+h4
+{
+	color: #555;
+	font-weight: normal;
+	}
+.col-4 p
+{
+	font-size: 14px;
+	} 
+.rating .fa
+{
+	color: #ff523b;
+	}	
+.col-4:hover
+{
+	transform: translateY(-5px);
+	}
+	
+/*offer*/	
+.offer
+{
+	background:radial-gradient(#fff,#ffd6d6);
+	margin-top: 80px;
+	padding: 30px 0;
+	}
+.col-2 .offer-img
+{
+	padding: 350;
+	height: 400px;
+	width:100%;
+	}
+small
+{
+	color: #555;
+	}
+/*testimonial	*/
+
+.testimonial
+{
+	padding-top: 100px;
+	}
+.testimonial .col-3
+{
+	text-align: center;
+	padding: 40px  20px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+	}	
+.testimonial .col-3 img
+{
+	width: 170px;
+	margin-top: 20px;
+	border-radius: 50%;
+	heighr:100px;
+	}
+.testimonial .col-3:hover
+{
+	transform: translateY(-10px);
+	}
+.fa.fa-quote-left
+{
+	font-size: 34px;
+	color: #ff523b;
+	}
+.col-3 p
+{ 	
+	font-size: 12px;
+	color: #777;
+	margin: 12px 0;
+	}
+.testimonial .col-3 h3
+{
+	font-weight: 600;
+	color: #555;
+	font-size: 16px;
+	}
+.footer
+{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 20px;
+
+	}
+.footer p
+{
+	color: #8a8a8a;
+	}
+.footer h3
+{
+	color: #fff;
+	margin-bottom: 20px;
+	}
+.footer-col-1, .footer-col-2, .footer-col-3, footer-col-4
+{
+	min-width: 250px;
+	margin-bottom: 20px;
+	}
+.footer-col-1
+{
+	flex-basis: 30%;
+	}
+.footer-col-2
+{
+	flex: 1;
+	text-align: center;
+	}		
+.footer-col-2 img
+{
+	width: 400px;
+	margin-bottom: 20px;
+	
+	}		
+.footer-col-3, .footer-col-4
+{
+	flex-basis: 12%;
+	text-align:center;
+	}
+ul
+{
+	list-style-type: none;
+	}	
+.app-logo
+{
+	margin-top: 20px;
+
+	}	
+.app-logo img
+{
+	width: 140px;
+	}	
+.footer hr
+{
+	border: none;
+	background:#b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+	}	
+.copyright
+{
+	
+	text-align:center;
+	}			
+.menu-icon
+{
+	width:50px;
+	margin-left: 20px;
+	display: none;
+	}
+@media only screen and (max-width: 800px){	
+		nav ul{
+			position: abslute;
+			top: 70px;
+			left: 0;
+			background: #333;
+			width: 100%;
+			overflow:hidden;
+			transition: max-height0.5s;
+			}
+		nav ul li
+		{
+			display: block;
+			margin-right: 50px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			}	
+		nav ul li a
+		{
+			color: #fff;
+			}
+		.menu-icon
+		{
+			display:block;
+			cursor: pointer;
+			}			
+	}
+@media only screen and (max-width: 600px)
+{
+	.row
+	{
+		text-align:center;
+		}
+	.col-2, .col-3, .col-4
+	{
+		flex-basis: 100%;
+		}	
+	
+	}	
+	
+</style>
+
+<body>
+<div class="header">
+
+<div class="container">
+<div class="navbar">
+<div class="logo">
+<img src="g.png" width="125px">
+</div>
+<nav>
+	<ul id="MenuItems">
+	<li><a href="">HOME</a></li>
+    <li><a href="">PRODUCTS</a></li>
+    <li><a href="">ABOUT US</a></li>
+    <li><a href="">CONTACT</a></li>
+    <li><a href="">ACCOUNT</a></li>
+	</ul>
+</nav>
+	<img src=""><i class="fa fa-gift" height=30px; width 30px;></i>
+    <img src="https://img.icons8.com/material-rounded/24/000000/menu--v3.png"/><class="menu-icon" onClick="menutoggle()">
+</div>
+		<div class="row">
+        <div class="col-2">
+        <h1>SHAH E-GIFT SERVICES</h1>
+        	<h2>This is your Online Gift Store is just a few click away.</h2>
+            <p>SHAH E-GIFT CENTER is a small startup with a dream to color your lives through our designs.<br>we are motivated to provided custom graphics printed products to those who believe in quality over quantity.</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+        <img src="ll.jpg">
+        <H1>VISIT NOW!!!!</H1>
+            <p>Worl's Largest Brand E-Gift Marketplace.<br>Choice your favourite product and Order now!!!!<br>Complete Variety.<br>Comfortable commute.Hot selling outfit.<br>The Latest Trend. </p>
+        </div>
+</div>
+</div>
+</div>
+<!----features CATEGORIES ------->
+
+<div class="categories">
+<div class="small-container">
+<div class="row">
+    	<div class="col-3">
+    	<img src="toy.jpg">
+        <p><b></B>Kids toys</b><br>impotrted Quality Realistic Soft Stuff Gifts for kid.</p>
+    </div>
+		<div class="col-3">
+    	<img src="basket.jpg">
+        <p>Make your relatives happy.<br>send them perfect gift items.<br>your choice is at your door step.</p>
+    </div>
+    	<div class="col-3">
+    	<img src="gifts.jpg">
+        <p>We have Varities of gifts<br>for all occassion.<br>your order completion is one step away.</p>
+        </div>
+    </div>
+	</div>
+</div>
+
+<!--features product----->
+
+<div class="small-container">
+	<h2 class="title">Featured Products</h2>
+    <div class="row">
+		<div class="col-4">
+          <img src="chocolate.jpg">
+           <h4>chocolates</h4>
+           <P>10%OFF<BR>COME FIRST GET FIRST</P>
+           <p>Buy one get one free.</p>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.399/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="LATE.jpg">
+           <h4>Woman Braclete</h4>
+           <p>Sale Woman Magnet Braclete<br>Luxury Ladies Fashion</p>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.999/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="boy.jpg">
+           <h4>Best BirthDay Gifts</h4>
+           <p>Special Gifts for your BirthDay</p>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.2000/=</p>
+    	    </div>
+            
+           <div class="col-4">
+          <img src="PERFUME.jpg">
+           <h4>Perfume</h4>
+           <p>Find the best colognes for your favourite.<br>We List the attractive smelling perfumes.</p>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.1500/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="pen.jpg">
+           <h4>Pen</h4>
+           <p>A Pen is the best and common writing Instrument.<br>Let's your best memories from it  </p>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.599/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="photo.jpg">
+           <h4>Photo frame</h4>
+           <P>Photo Frame is one of the best photo editors<br>which can bring beautiful frames to your photos.</P>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS1000/=</p>
+    	    </div>
+         
+ 		</div>
+     
+        <!--latest product again-->
+        
+        <h2 class="title">Latest Product</h2>
+        <div class="row">
+		<div class="col-4">
+          <img src="RING.jpg">
+           <h4>Rose Ring</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.3000/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="wallet.jpg">
+           <h4>Wallet</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.25000/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="redshirt.jpg">
+           <h4>Shirt</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.1500/=</p>
+    	    </div>
+            
+             <div class="col-4">
+          <img src="mug.jpg">
+           <h4>Mug</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.500/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="gift cards.jpg">
+           <h4>Gift Cards</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.300/=</p>
+    	    </div>
+            
+            <div class="col-4">
+          <img src="beautiful-gold-necklace-8361004.jpg">
+           <h4>Necklace</h4>
+           <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <p>RS.1500</p>
+    	    </div>
+           </div>
+    </div>
+    
+    <!--offer-->
+    <div class="offer">
+    <div class="small-container">
+    <div class="row">
+    <div class="col-2">
+    	<img src="hand.jpg" class="offer-img">
+    	</div>
+        <div class="col-2">
+        <p>Exculsively Available on Shah E-Gift Services</p>
+        <h1>Smart Band</h1>
+        <small>Here you can find what you are looking for.
+        </small>
+        <a href="" class="btn">Buy Now &#8594;</a>
+        </div>
+    </div>
+    </div>
+     </div>
+    
+   <!--testimonial --> 
+   
+  <div class="testimonial">
+  <div class="small-container">
+  <div class="row">
+  <div class="col-3">
+  <i class="fa fa-quote-left"></i>
+  	<p>Thank you for your excellent customer services and wonderful gift products.
+    </p>
+    <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <img src="box.jpg">
+              <h3>Shaheen Tanveer</h3>
+          </div>
+          
+           <div class="col-3">
+  <i class="fa fa-quote-left"></i>
+  	<p>I was very placed with the quality of gift basket and prompt delivery.</p>
+    <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <img src="girl.jpg">
+              <h3>Tanveer</h3>
+          </div>
+          
+          <div class="col-3">
+  <i class="fa fa-quote-left"></i>
+  	<p>I have ordered mant items specially chocolates,cake gift via send best gift.</p>
+    <div class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star-half"></i>
+             <i class="fa fa-star-o"></i>
+              </div>
+              <img src="online.jpg">
+              <h3>Ashar</h3>
+          </div>
+  
+  </div>
+  </div>
+  </div>
+ 
+ <!--footer -->
+ 
+ <div class="footer">
+ <div class="container">
+ <div class="row">
+ 	<div class="footer-col-1">
+ 		<h3>Download Our App</h3>
+    	<p>Download App for Andriod and ios mobile phone.</p>
+        <div class="app-logo">
+        	<img src="google-store.png">
+            <img src="app-icon.png">
+            
+        </div>
+ 		</div>
+ 		
+        <div class="footer-col-2">
+ 		<img src="ffffff.jpg">
+    	<p>Great product review from happily customers.<br>Gift ideas and reviews from real customers. </p>
+        </div>
+        
+        <div class="footer-col-3">
+        <h3>Useful Links</h3>
+ 		<ul>
+        	<li>coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+        </div>
+        
+        <div class="footer-col-3">
+        <h3>follow Us</h3>
+ 		<ul>
+        	<li>facebook</li>
+            <li>Twitter</li>
+            <li>Insragram</li>
+            <li>YouTube</li>
+        </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">SHAHEEN TANVEER</p>
+   </div>
+ </div>
+<script>
+     var MenuItems = docement.getElementById(MenuItems);
+ 
+ 		MenuItems.style.maxHeight = "0px";
+ 
+ 				function menutoggle(){
+					
+					if(MenuItems.style.maxHeight == "0px")
+					{
+ 						MenuItems.style.maxHeight = "200px";
+					}
+					else
+					{
+ 						MenuItems.style.maxHeight = "0px";
+					}
+				}
+ </script>
+   
+</body>
+</html>
