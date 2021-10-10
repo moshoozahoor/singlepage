@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing Page</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<style>
+.but:hover {
+  color: #d4bdad;
+}
+.but1:hover {
+  background-color: #d4bdad;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#731e1e ;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 20px;
+  border-color: transparent;
+  height: 60px;
+  text-align: center;
+
+}
+</style>
+<body>
+<div style="background-image: url(https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260); padding-bottom: 20px; height: 400px;background-attachment: fixed;">
+  <div >
+    <img src="logo.png" style="width: 100px;">
+  </div style="padding-top:20px; ">
+  <h1 style="    padding-left: 70px; padding-top: 70px;"><b style="padding-left: 90px;"> One Bite <br> Different Expression!<b></h1>
+</div>
+<div style="text-align: center;">
+  <h1 style="color: #731e1e;"><b>Taste</b></h1>
+  <h4>Our Heaven</h4>
+</div>
+<div style="padding-bottom: 50px;" class="shadow p-3 mb-5 bg-body rounded">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid"  style="background-color: #731e1e;" >
+    <a class="navbar-brand" href="#" style="color: white;" ><b class="but">Bon Apetite</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="padding-left: 25px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="# " style="color: white; "!class="but">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"style="color: white;">Menu</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#"style="color: white;">Links</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#"style="color: white;"> Specials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"style="color: white;"> Others</a>
+        </li>
+       </ul>
+        <form class="d-flex" style="padding-left: 250px;">
+      <input class="form-control me-2" type="search"  aria-label="Search">
+      <button class="btn btn-outline-success"  type="submit" style="color: white;background-color: #731e1e; ">Search</button>
+    </form>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="container">
+  <div class="row" >
+    <div class="col-md-4"><img  src="https://images.pexels.com/photos/5797913/pexels-photo-5797913.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  class="shadow p-3 mb-5 bg-body rounded" style="width:200px; height: 150px;margin-left: 160px;"></div>
+    <div class="col-md-4"><img src="https://images.pexels.com/photos/793770/pexels-photo-793770.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="shadow p-3 mb-5 bg-body rounded" style="width:200px; height: 150px;margin-left: 80px;"></div>
+    <div class="col-md-4"><img src="https://images.pexels.com/photos/1055270/pexels-photo-1055270.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"class="shadow p-3 mb-5 bg-body rounded" style="width:200px; height: 150px;"></div>
+  </div>
+</div>
+<div>
+  <h5  style="color: #731e1e; text-align: center;padding-top: 50px;padding-bottom: 70px;">Explore More</h5>
+</div>
+<div style="background-color: #731e1e;" class="shadow p-3 mb-5 bg-white rounded">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <div class="container-fluid" style="background-color: #731e1e; ">
+    <div class="row">
+      <div class="col-md-6"><img src="https://images.pexels.com/photos/3993720/pexels-photo-3993720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="height: 300px;width: 400px;"></div>
+      <div class="col-md-6" style="text-align: center; color: white; padding-right: 70px; padding-top: 50px;">
+    <h1 >About Us</h1>
+    <p style="font-size: 13px; padding-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <button class="but1"  style="border-radius: 8px; background: linear-gradient(
+99deg
+, white, transparent);border: transparent">Click Here</button>
+      </div>
+  </div>
+</div>
+  </div>
+</nav>
+</div>
+<div>
+  <h2  style="color: #731e1e; text-align: center;padding-top: 50px;padding-bottom: 50px;"><b>Gallery</b></h2>
+</div>
+<div >
+<marquee behavior="scroll" direction="right"  >
+<img src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/1436172/pexels-photo-1436172.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;"  >
+<img src="https://images.pexels.com/photos/5836621/pexels-photo-5836621.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/5377561/pexels-photo-5377561.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/2613471/pexels-photo-2613471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/1397309/pexels-photo-1397309.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/302900/pexels-photo-302900.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+<img src="https://images.pexels.com/photos/1170659/pexels-photo-1170659.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="150" style="margin-left: 50px;" >
+
+</marquee>
+</div>
+<div>
+  <h2  style="color: #731e1e; text-align: center;padding-top: 50px;padding-bottom: 50px;"><b>Portfolio</b></h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+  <img src="https://media.istockphoto.com/photos/baking-background-with-organic-ingredients-picture-id1222596313?b=1&k=6&m=1222596313&s=170667a&w=0&h=Z_8aBaSvl1B9nJAwGa1-fDN4HsLWHpuGKrpbZB77BVs=" alt="Avatar" class="image" >
+  <div class="middle">
+    <button class="text">CLICK 1</button>
+    
+  </div>
+</div>
+  <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+  <img src="https://cdn.pixabay.com/photo/2020/03/18/15/49/cupcakes-4944589__340.jpg" alt="Avatar" class="image"  style="height: 200px;">
+  <div class="middle">
+    <button class="text">CLICK 2</button>
+    
+  </div>
+</div>  <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+  <img src="https://cdn.pixabay.com/photo/2018/03/24/16/08/cake-3257019__340.jpg" alt="Avatar" class="image" >
+  <div class="middle">
+    <button class="text">CLICK 3</button>
+    
+  </div>
+</div>
+</div>
+</div>
+<div class="container" style="padding-top: 40px;">
+  <div class="row">
+    <div class="col-md-4 shadow p-3 mb-5 bg-white rounded ">
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/baked-goods-1867459__340.jpg" alt="Avatar" class="image" class="" >
+  <div class="middle ">
+    <button class="text ">CLICK 4</button>
+   
+  </div>
+</div>
+  <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+  <img src="https://cdn.pixabay.com/photo/2016/11/29/10/09/bakery-1868925__340.jpg" alt="Avatar" class="image"  style="">
+  <div class="middle">
+    <button class="text">CLICK 5</button>
+    
+  </div>
+</div>  <div class="col-md-4 shadow p-3 mb-5 bg-white rounded">
+  <img src="https://cdn.pixabay.com/photo/2016/03/27/19/23/cakes-1283821__340.jpg" alt="Avatar" class="image" >
+  <div class="middle">
+    <button class="text ">CLICK 6</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="background-color: #731e1e; color: white; text-align: center;font-size: 10px;">
+  <p>Since 1978</p>
+</div>
+
+</body>
+</html>
